@@ -1,0 +1,74 @@
+'use client';
+
+import { Briefcase, Calendar } from 'lucide-react';
+
+const experiences = [
+  {
+    title: 'Software Engineer',
+    company: 'CODIRO Technologies',
+    location: 'Onsite',
+    period: 'Sept 2025 - Present',
+    description: [
+      'Building high-performance web applications using Next.js, React.js, and REST APIs',
+      'Developing scalable backend services with Node.js and Express.js',
+      'Collaborating with cross-functional teams to design optimized and user-centric solutions',
+    ],
+  },
+];
+
+export function Experience() {
+  return (
+    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-black">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            Experience
+          </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+
+        <div className="space-y-6">
+          {experiences.map((exp, index) => (
+            <div key={index} className="hover:shadow-xl transition-all hover:border-blue-600/50 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 rounded-lg shadow-sm">
+              <div className="p-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-blue-600/20 rounded-lg">
+                      <Briefcase className="text-blue-600 dark:text-blue-400" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                        {exp.title}
+                      </h3>
+                      <p className="text-lg text-slate-700 dark:text-slate-300">
+                        {exp.company}
+                      </p>
+                      <p className="text-sm text-slate-500 dark:text-slate-500">
+                        {exp.location}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-slate-500 dark:text-slate-500 mt-2 md:mt-0">
+                    <Calendar size={16} />
+                    <span className="text-sm">{exp.period}</span>
+                  </div>
+                </div>
+                <ul className="space-y-2 ml-16">
+                  {exp.description.map((item, i) => (
+                    <li
+                      key={i}
+                      className="text-slate-600 dark:text-slate-400 flex items-start gap-2"
+                    >
+                      <span className="text-blue-600 dark:text-blue-500 mt-1.5">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
