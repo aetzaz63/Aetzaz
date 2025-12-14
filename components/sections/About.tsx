@@ -24,10 +24,10 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              I'm a software engineer with industrial experience, graduated from FAST NUCES, Islamabad with a Silver Medal. I specialize in creating efficient automation workflows using n8n and building scalable web applications.
+              I'm a software engineer with industrial experience, graduated from FAST NUCES, Islamabad. I specialize in creating efficient automation workflows using n8n and building scalable web applications.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              My expertise spans across the MERN stack, PHP development, Python, and modern DevOps practices. I'm particularly passionate about AI integration and workflow automation that helps businesses streamline their operations.
+              My expertise spans across the MERN stack, Python, and modern DevOps practices. I'm particularly passionate about AI integration and workflow automation that helps businesses streamline their operations.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
