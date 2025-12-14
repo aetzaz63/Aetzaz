@@ -1,6 +1,6 @@
 'use client';
 
-import { Instagram, Github, Linkedin, FileText } from 'lucide-react';
+import { Instagram, Github, Linkedin, Facebook } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,7 +16,7 @@ export function Hero() {
     { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/muhammad-aetzaz-ashraf', label: 'LinkedIn' },
-    { icon: FileText, href: 'https://medium.com', label: 'Medium' },
+    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
   ];
 
   return (
@@ -71,7 +71,7 @@ export function Hero() {
 
             <button
               onClick={scrollToContact}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch
             </button>
