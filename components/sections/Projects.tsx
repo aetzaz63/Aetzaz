@@ -21,7 +21,7 @@ const allProjects: Project[] = [
     description:
       'Developed an advanced AI-powered customer support automation system using n8n and Shopify Admin APIs. Implemented real-time order tracking, product lookup, automated email responses, and conversation memory.',
     technologies: ['n8n', 'Gemini', 'Shopify API', 'Webhooks'],
-    image: '/image4.png',
+    image: '/shopify.png',
   },
   {
     title: 'n8n AI-Powered Travel Package Automation',
@@ -30,7 +30,7 @@ const allProjects: Project[] = [
     description:
       'Built an automated workflow in n8n handling travel package recommendations, booking flow, and user interaction. Integrated OpenAI, webhook triggers, database operations, and decision logic.',
     technologies: ['n8n', 'OpenAI', 'Webhooks', 'Database'],
-    image: '/image1.png',
+    image: '/travel.png',
   },
   {
     title: 'ShopNow E-Commerce Platform',
