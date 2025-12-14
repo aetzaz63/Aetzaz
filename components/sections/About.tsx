@@ -32,7 +32,7 @@ export function About() {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
-                href="/aetzaz_resume.pdf"
+                href="/Aetzaz_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105"
               >
@@ -100,7 +100,7 @@ export function About() {
                     Location
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300 text-sm">
-                    Current: Islamabad
+                    Current: H.M.C Taxila
                   </p>
                   <p className="text-slate-700 dark:text-slate-300 text-sm">
                     Permanent: Gujranwala

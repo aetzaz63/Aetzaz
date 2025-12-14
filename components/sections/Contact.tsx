@@ -1,14 +1,14 @@
 'use client';
 
-import { Mail, Phone, MapPin, Linkedin, Github, Instagram, FileText } from 'lucide-react';
+import { Mail, Facebook, Phone, MapPin, Linkedin, Github, Instagram, FileText } from 'lucide-react';
 import Link from 'next/link';
 
 export function Contact() {
   const socialLinks = [
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/muhammad-aetzaz-ashraf', label: 'LinkedIn' },
-    { icon: FileText, href: 'https://medium.com', label: 'Medium' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export function Contact() {
                 Address
               </h3>
               <p className="text-slate-600 dark:text-slate-400">
-                Current: Islamabad
+                Current: H.M.C Taxila
               </p>
               <p className="text-slate-600 dark:text-slate-400">
                 Permanent: Gujranwala

@@ -13,10 +13,10 @@ export function Hero() {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/muhammad-aetzaz-ashraf', label: 'LinkedIn' },
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
   ];
 
   return (
