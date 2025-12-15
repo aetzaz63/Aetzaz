@@ -6,7 +6,7 @@ import {
   Phone,
   MapPin,
   Linkedin,
-  Github,
+
   Instagram,
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -15,7 +15,7 @@ import Link from 'next/link';
 export function Contact() {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
-    { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
+    
     { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
     { icon: FaWhatsapp, href: 'https://wa.me/923125956773', label: 'WhatsApp' },
