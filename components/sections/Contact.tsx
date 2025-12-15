@@ -1,6 +1,15 @@
 'use client';
 
-import { Mail, Facebook, Phone, MapPin, Linkedin, Github, Instagram, FileText } from 'lucide-react';
+import {
+  Mail,
+  Facebook,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
+  Instagram,
+} from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
 export function Contact() {
@@ -9,6 +18,7 @@ export function Contact() {
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
+    { icon: FaWhatsapp, href: 'https://wa.me/923125956773', label: 'WhatsApp' },
   ];
 
   return (
@@ -20,11 +30,13 @@ export function Contact() {
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           <p className="text-slate-600 dark:text-slate-400 mt-6 max-w-2xl mx-auto">
-            I'm always interested in new opportunities, whether it's a freelance project, full-time position, or just a chat about technology and automation.
+            I'm always interested in new opportunities, whether it's a freelance project,
+            full-time position, or just a chat about technology and automation.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+          {/* Address */}
           <div className="border border-slate-200 dark:border-slate-800 hover:shadow-lg hover:border-blue-600/50 transition-all bg-white dark:bg-slate-900/40 rounded-lg shadow-sm">
             <div className="flex flex-col items-center text-center p-8">
               <div className="p-3 bg-blue-600/20 rounded-full mb-4">
@@ -42,6 +54,7 @@ export function Contact() {
             </div>
           </div>
 
+          {/* Phone */}
           <div className="border border-slate-200 dark:border-slate-800 hover:shadow-lg hover:border-blue-600/50 transition-all bg-white dark:bg-slate-900/40 rounded-lg shadow-sm">
             <div className="flex flex-col items-center text-center p-8">
               <div className="p-3 bg-blue-600/20 rounded-full mb-4">
@@ -60,11 +73,12 @@ export function Contact() {
                 href="tel:+923040096320"
                 className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                03040096320
+                0304 0096320
               </Link>
             </div>
           </div>
 
+          {/* Email */}
           <div className="border border-slate-200 dark:border-slate-800 hover:shadow-lg hover:border-blue-600/50 transition-all bg-white dark:bg-slate-900/40 rounded-lg shadow-sm">
             <div className="flex flex-col items-center text-center p-8">
               <div className="p-3 bg-blue-600/20 rounded-full mb-4">
@@ -83,6 +97,7 @@ export function Contact() {
           </div>
         </div>
 
+        {/* Social Icons */}
         <div className="flex justify-center gap-6">
           {socialLinks.map((link, index) => (
             <Link
@@ -93,7 +108,10 @@ export function Contact() {
               className="p-4 rounded-full bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-600/50 transition-all duration-300 transform hover:scale-110"
               aria-label={link.label}
             >
-              <link.icon size={24} />
+              <link.icon
+                size={24}
+                className={link.label === 'WhatsApp' ? 'text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors break-all' : ''}
+              />
             </Link>
           ))}
         </div>
