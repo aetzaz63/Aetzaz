@@ -64,7 +64,7 @@ export function Navigation() {
             }}
             className="text-xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            Aetzaz
+           Muhammad Aetzaz
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
