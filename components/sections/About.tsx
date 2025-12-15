@@ -32,7 +32,7 @@ export function About() {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
-                href="/Aetzaz_Resume.pdf"
+                href="/Muhammad_Aetzaz.pdf"
                 download
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105"
               >
