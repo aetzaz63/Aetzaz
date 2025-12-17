@@ -31,14 +31,14 @@ export function About() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link
+              <a
                 href="/Muhammad_Aetzaz.pdf"
                 download
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105"
               >
                 <Download size={20} />
                 Download Resume
-              </Link>
+              </a>
               <button
                 onClick={scrollToContact}
                 className="inline-flex items-center gap-2 bg-slate-700 dark:bg-slate-700 hover:bg-slate-600 dark:hover:bg-slate-600 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105"
