@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Muhammad Aetzaz Ashraf - Software Engineer',
   description: 'Portfolio of Muhammad Aetzaz Ashraf - Full Stack Developer & Software Engineer',
+  icons: {
+    icon: '/Aetzaz.png',
+  },
 };
 
 export default function RootLayout({
