@@ -30,7 +30,7 @@ const allProjects: Project[] = [
       'A comprehensive full-stack blogging platform built with Next.js featuring user authentication, admin dashboard, blog management, social features, and real-time notifications.',
     technologies: ['Next.js', 'React', 'Tailwind CSS',  'Context API', 'React Hook Form', 'Yup'],
    
-    githubUrl: 'https://github.com/aetzaz63/Blogging-App',
+    githubUrl: 'https://github.com/aetzaz63/Blog-sphere',
     caseStudy: {
       overview: 'BlogSphere is a modern, feature-rich blogging platform that enables users to create, manage, and share blog posts with an engaged community. The platform includes comprehensive user management, social networking features, and a powerful admin dashboard.',
       challenge: 'The main challenges were implementing a scalable architecture that handles complex user interactions, creating an intuitive admin panel for content moderation, building a robust notification system, and ensuring data persistence without a backend database.',
