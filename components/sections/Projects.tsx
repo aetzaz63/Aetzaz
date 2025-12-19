@@ -28,8 +28,7 @@ const allProjects: Project[] = [
     category: 'Web Development',
     description:
       'A comprehensive full-stack blogging platform built with Next.js featuring user authentication, admin dashboard, blog management, social features, and real-time notifications.',
-    technologies: ['Next.js', 'React', 'Tailwind CSS',  'Context API', 'React Hook Form', 'Yup'],
-   
+    technologies: ['Next.js', 'React', 'Tailwind CSS', 'Context API', 'React Hook Form', 'Yup'],
     githubUrl: 'https://github.com/aetzaz63/Blog-sphere',
     caseStudy: {
       overview: 'BlogSphere is a modern, feature-rich blogging platform that enables users to create, manage, and share blog posts with an engaged community. The platform includes comprehensive user management, social networking features, and a powerful admin dashboard.',
@@ -78,7 +77,6 @@ const allProjects: Project[] = [
     image: '/shop.png',
     githubUrl: 'https://github.com/aetzaz63/ShopNow-NextjsProject',
   },
- 
   {
     title: 'End-to-End Data Engineering Pipeline',
     year: '2025',
@@ -139,7 +137,7 @@ export function Projects() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-md font-medium transition-all duration-300 ${
+              className={`px-4 py-2 rounded-md font-medium transition-all duration-300 cursor-pointer ${
                 activeTab === tab
                   ? 'bg-blue-600 text-white hover:bg-blue-700'
                   : 'border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 bg-transparent'
@@ -154,7 +152,7 @@ export function Projects() {
           {getDisplayProjects().map((project, index) => (
             <div
               key={index}
-              className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
+              className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
             >
               {project.image && (
                 <div className="relative aspect-video overflow-hidden">
@@ -172,7 +170,7 @@ export function Projects() {
                   <h3 className="text-lg font-semibold leading-none tracking-tight text-slate-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-blue-100 dark:bg-blue-600/30 text-blue-700 dark:text-blue-300">
+                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-blue-600/30 text-blue-700 dark:text-blue-300 shrink-0">
                     {project.year}
                   </span>
                 </div>
@@ -185,7 +183,7 @@ export function Projects() {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-400"
+                      className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-400"
                     >
                       {tech}
                     </span>
@@ -197,7 +195,7 @@ export function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm font-medium transition-colors"
+                      className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm font-medium transition-colors cursor-pointer"
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -212,7 +210,7 @@ export function Projects() {
                   {project.caseStudy && (
                     <button
                       onClick={() => setSelectedProject(project)}
-                      className="inline-flex items-center gap-2 text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-sm font-medium transition-colors"
+                      className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 text-sm font-medium transition-colors cursor-pointer"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -231,7 +229,7 @@ export function Projects() {
             href="https://github.com/aetzaz63?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105 cursor-pointer"
           >
             View All Projects on GitHub
           </Link>
@@ -240,8 +238,14 @@ export function Projects() {
 
       {/* Case Study Modal */}
       {selectedProject && selectedProject.caseStudy && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-          <div className="bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+          onClick={() => setSelectedProject(null)}
+        >
+          <div
+            className="bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="sticky top-0 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 p-6 flex justify-between items-start">
               <div>
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
@@ -251,7 +255,8 @@ export function Projects() {
               </div>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+                className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors cursor-pointer"
+                aria-label="Close modal"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -262,21 +267,21 @@ export function Projects() {
             <div className="p-6 space-y-6">
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Overview</h4>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.overview}
                 </p>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Challenge</h4>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.challenge}
                 </p>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Solution</h4>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.solution}
                 </p>
               </div>
@@ -286,8 +291,8 @@ export function Projects() {
                 <ul className="space-y-2">
                   {selectedProject.caseStudy.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></span>
-                      <span className="text-slate-600 dark:text-slate-400 leading-relaxed">{feature}</span>
+                      <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></span>
+                      <span className="text-slate-700 dark:text-slate-400 leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -295,7 +300,7 @@ export function Projects() {
 
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Impact & Results</h4>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.impact}
                 </p>
               </div>
@@ -306,7 +311,7 @@ export function Projects() {
                   {selectedProject.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800"
+                      className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800"
                     >
                       {tech}
                     </span>

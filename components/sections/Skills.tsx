@@ -1,12 +1,12 @@
 'use client';
 
-import { Code, Database, Wrench, Package, Zap, Workflow, Layers, Sparkles } from 'lucide-react';
+import { Code, Wrench, Package, Zap, Workflow, Layers, Sparkles } from 'lucide-react';
 
 const skillCategories = [
   {
     title: 'Languages',
     icon: Code,
-    skills: ['JavaScript', 'Python', 'TypeScript', 'C++', 'C#', 'Java', 'SQL'],
+    skills: ['JavaScript', 'Python', 'C++', 'C#', 'Java', 'SQL'],
   },
   {
     title: 'Web Technologies',
@@ -21,6 +21,11 @@ const skillCategories = [
       'Git',
       'Tailwind CSS',
       'Postman',
+      'TypeScript',
+      'JWT',
+      'BcryptJS',
+      
+      'RESTful APIs',
     ],
   },
   {
@@ -31,11 +36,11 @@ const skillCategories = [
   {
     title: 'DevOps Tools',
     icon: Wrench,
-    skills: ['GitHub Actions', 'Jenkins', 'Docker', 'Kubernetes', 'DVC', 'MLflow', 'Apache Airflow', 'JWT', 'BcryptJS'],
+    skills: ['GitHub Actions', 'Jenkins', 'Docker', 'Kubernetes', 'DVC', 'MLflow', 'AWS'],
   },
 ];
 
-const additionalExpertise = ['Microservices', 'CI/CD', 'RESTful APIs', 'DVC'];
+const additionalExpertise = ['Microservices', 'CI/CD'];
 
 const expertiseCards = [
   {
@@ -57,7 +62,7 @@ const expertiseCards = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-black">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
@@ -75,7 +80,7 @@ export function Skills() {
             return (
               <div
                 key={index}
-                className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
+                className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
               >
                 <div className="flex flex-col space-y-1.5 p-6">
                   <h3 className="text-base font-semibold leading-none tracking-tight flex items-center gap-3 text-slate-900 dark:text-white">
@@ -90,7 +95,7 @@ export function Skills() {
                     {category.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-400 hover:bg-blue-100 dark:hover:bg-blue-600/30 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                        className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-slate-200 dark:bg-slate-800/50 text-slate-700 dark:text-slate-400 hover:bg-blue-600/30 hover:text-blue-700 dark:hover:text-blue-300 transition-colors cursor-pointer"
                       >
                         {skill}
                       </span>
@@ -110,7 +115,7 @@ export function Skills() {
             {additionalExpertise.map((skill, i) => (
               <span
                 key={i}
-                className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold border-2 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold border-2 border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
                 {skill}
               </span>
@@ -124,7 +129,7 @@ export function Skills() {
             return (
               <div
                 key={index}
-                className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
+                className="hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 hover:border-blue-600/50 rounded-lg shadow-sm"
               >
                 <div className="flex flex-col space-y-1.5 p-6">
                   <div className="p-3 bg-blue-600/20 rounded-lg w-fit mb-3">
