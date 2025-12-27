@@ -8,7 +8,7 @@ export function Hero() {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-mern-stack-ai-automation-n8n/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
   ];
 
@@ -18,7 +18,7 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-black"
     >
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-black dark:via-slate-900 dark:to-black"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-slate-100 dark:from-black dark:via-slate-900 dark:to-black"></div>
         <div className="absolute top-20 right-10 w-96 h-96 bg-blue-500/10 dark:bg-blue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-300/10 dark:bg-slate-600/5 rounded-full blur-3xl"></div>
       </div>
