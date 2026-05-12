@@ -9,7 +9,6 @@ const experiences = [
     location: 'Onsite',
     period: 'Sept 2025 - Present',
     description: [
-      'Building high-performance web applications using Next.js, React.js, and REST APIs',
       'Developing scalable backend services with Node.js and Express.js',
       'Collaborating with cross-functional teams to design optimized and user-centric solutions',
     ],
