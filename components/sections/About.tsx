@@ -20,7 +20,7 @@ export function About() {
     {
       icon: Target,
       title: 'Specialization',
-      content: 'MERN Stack Developer and AI Automations',
+      content: 'AI/ML Engineer  ',
       subtitle: null,
     },
     {
@@ -44,10 +44,14 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              I'm a software engineer with industrial experience, graduated from FAST NUCES, Islamabad. I specialize in creating efficient automation workflows using n8n and building scalable web applications.
+              I'm a software engineer with industrial experience, graduated from FAST NUCES, Islamabad. I specialize in building intelligent AI systems, automation workflows, and scalable digital solutions.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              My expertise spans across the MERN stack, Python, and modern DevOps practices. I'm particularly passionate about AI integration and workflow automation that helps businesses streamline their operations.
+              My work focuses on AI-powered applications using LangChain, LangGraph FastAPI, RAG pipelines(RAG/Agentic RAG), vector databases, LLM integrations, and n8n automation. I enjoy creating smart systems that simplify complex tasks and deliver practical real-world solutions.   
+            </p>
+
+            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+             I’m constantly learning and exploring new technologies in AI, NLP, Machine Learning, and Software Engineering to build innovative and impactful products.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
