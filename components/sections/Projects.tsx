@@ -39,7 +39,7 @@ const allProjects: Project[] = [
     description:
       'Full-stack intelligent document assistant using FastAPI and LangChain that lets users upload PDF, DOCX, CSV, and TXT files and receive AI-generated answers with citations. Powered by Qdrant vector search, HuggingFace embeddings, and real-time Groq LLM streaming.',
     technologies: ['Python', 'FastAPI', 'LangChain', 'Qdrant', 'HuggingFace', 'Groq LLM'],
-    githubUrl: 'https://github.com/aetzaz63',
+    githubUrl: 'https://github.com/aetzaz63/RAG_Assistant',
   },
   {
     title: 'Stock Sentiment Analysis using NLP & Machine Learning',
