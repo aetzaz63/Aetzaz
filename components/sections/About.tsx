@@ -20,7 +20,7 @@ export function About() {
     {
       icon: Target,
       title: 'Specialization',
-      content: 'AI/ML Engineer  ',
+      content: 'AI/ML Engineer',
       subtitle: null,
     },
     {
@@ -44,14 +44,13 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              I'm a software engineer with industrial experience, graduated from FAST NUCES, Islamabad. I specialize in building intelligent AI systems, automation workflows, and scalable digital solutions.
+              I'm a Software Engineer graduated from FAST-NUCES, Islamabad, with a focus on AI/ML and NLP. I specialize in building intelligent systems, RAG pipelines, and production-ready AI applications.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              My work focuses on AI-powered applications using LangChain, LangGraph FastAPI, RAG pipelines(RAG/Agentic RAG), vector databases, LLM integrations, and n8n automation. I enjoy creating smart systems that simplify complex tasks and deliver practical real-world solutions.   
+              My work centers on Agentic RAG systems, LLM integrations, and automation workflows using LangChain, LangGraph, FastAPI, vector databases, and n8n. I enjoy translating complex AI concepts into practical, real-world solutions.
             </p>
-
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-             I’m constantly learning and exploring new technologies in AI, NLP, Machine Learning, and Software Engineering to build innovative and impactful products.
+              I'm continuously expanding my knowledge across AI, NLP, and Machine Learning — driven by a passion for building systems that are not just functional, but genuinely impactful.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">

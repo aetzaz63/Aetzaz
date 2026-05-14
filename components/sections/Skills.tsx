@@ -6,27 +6,29 @@ const skillCategories = [
   {
     title: 'Languages',
     icon: Code,
-    skills: ['JavaScript', 'Python', 'C++', 'C#', 'Java', 'SQL'],
+    skills: ['Python', 'JavaScript', 'SQL'],
   },
   {
-    title: 'Web Technologies',
-    icon: Package,
+    title: 'AI / ML',
+    icon: Sparkles,
     skills: [
-      'React.js',
-      'Next.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'SQL',
-      'Git',
-      'Tailwind CSS',
-      'Postman',
-      'TypeScript',
-      'JWT',
-      'BcryptJS',
-      
-      'RESTful APIs',
+      'Machine Learning',
+      'NLP',
+      'RAG Pipelines',
+      'LangChain',
+      'LangGraph',
+      'RAGAS',
+      'HuggingFace Transformers',
+      'Scikit-learn',
+      'Pandas',
+      'NumPy',
+      'BERT',
     ],
+  },
+  {
+    title: 'LLMs & Vector DBs',
+    icon: Package,
+    skills: ['Groq LLM', 'Qdrant', 'Embedding Models', 'OpenAI'],
   },
   {
     title: 'Automation Workflows',
@@ -36,27 +38,32 @@ const skillCategories = [
   {
     title: 'DevOps Tools',
     icon: Wrench,
-    skills: ['GitHub Actions', 'Jenkins', 'Docker', 'Kubernetes', 'DVC', 'MLflow', 'AWS'],
+    skills: ['Docker', 'Kubernetes', 'GitHub Actions', 'MLflow', 'DVC', 'Git', 'Postman'],
+  },
+  {
+    title: 'Databases & Platforms',
+    icon: Layers,
+    skills: ['MongoDB', 'SQL Server', 'FastAPI'],
   },
 ];
 
-const additionalExpertise = ['Microservices', 'CI/CD'];
+const additionalExpertise = ['Microservices', 'CI/CD', 'Agentic AI', 'Semantic Search', 'Prompt Engineering'];
 
 const expertiseCards = [
   {
+    title: 'Agentic RAG Systems',
+    icon: Sparkles,
+    description: 'Building multi-step agentic pipelines with LangGraph for retrieval, evaluation, and intelligent response generation.',
+  },
+  {
     title: 'n8n Automation',
     icon: Workflow,
-    description: 'Expert in creating complex workflow automations and integrations',
+    description: 'Designing complex workflow automations and AI-powered integrations using n8n and third-party APIs.',
   },
   {
-    title: 'Full-Stack Development',
+    title: 'LLM Integration',
     icon: Layers,
-    description: 'End-to-end application development with modern technologies',
-  },
-  {
-    title: 'AI Integration',
-    icon: Sparkles,
-    description: 'Implementing AI solutions in web applications and workflows',
+    description: 'Integrating large language models into production-ready applications with real-time streaming and context-aware responses.',
   },
 ];
 
@@ -70,7 +77,7 @@ export function Skills() {
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto text-lg">
-            A comprehensive toolkit for building modern applications and automation solutions.
+            A comprehensive toolkit for building AI systems, automation workflows, and scalable applications.
           </p>
         </div>
 
