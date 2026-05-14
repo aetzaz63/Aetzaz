@@ -22,31 +22,36 @@ interface Project {
 }
 
 const allProjects: Project[] = [
+  // ---------- AI/ML ----------
   {
-    title: 'BlogSphere - Full-Stack Blogging Platform',
-    year: '2025',
-    category: 'Web Development',
+    title: 'Agentic Research Assistant with LangGraph RAG Pipeline',
+    year: '2026',
+    category: 'AI/ML',
     description:
-      'A comprehensive full-stack blogging platform built with Next.js featuring user authentication, admin dashboard, blog management, social features, and real-time notifications.',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'Context API', 'React Hook Form', 'Yup'],
-    githubUrl: 'https://github.com/aetzaz63/Blog-sphere',
-    caseStudy: {
-      overview: 'BlogSphere is a modern, feature-rich blogging platform that enables users to create, manage, and share blog posts with an engaged community. The platform includes comprehensive user management, social networking features, and a powerful admin dashboard.',
-      challenge: 'The main challenges were implementing a scalable architecture that handles complex user interactions, creating an intuitive admin panel for content moderation, building a robust notification system, and ensuring data persistence without a backend database.',
-      solution: 'Implemented a client-side data management system using LocalStorage and Context API, created reusable components for blog cards and forms, developed a comprehensive admin dashboard with user and blog management capabilities, and built a real-time notification system with follow/unfollow functionality.',
-      features: [
-        'User Authentication System: Complete registration, login, and profile management with form validation using React Hook Form and Yup',
-        'Blog Management: Create, edit, delete blogs with rich text content, image uploads, categories, and search/filter functionality',
-        'Admin Dashboard: Comprehensive user and blog management with enable/disable capabilities, statistics dashboard, and search filters',
-        'Social Features: Follow/unfollow system, user profiles, personalized feed showing posts from followed users',
-        'Notifications System: Real-time notifications for new followers, comments, and interactions with read/unread status',
-        'Rating & Comments: Interactive rating system with average calculations and nested comment threads with edit/delete options',
-        'Responsive Design: Mobile-first approach using Tailwind CSS with dark mode support',
-        'Data Persistence: Client-side state management with LocalStorage for seamless user experience',
-      ],
-      impact: 'Successfully created a fully functional blogging platform that demonstrates advanced Next.js capabilities, complex state management, and modern UI/UX patterns. The project showcases skills in full-stack development, user authentication flows, admin panel design, and social networking features implementation.',
-    },
+      'Built an Agentic RAG research assistant using LangGraph and LangChain with a multi-step workflow for retrieval, evaluation, and response generation. Includes intelligent routing that triggers web search when the knowledge base lacks relevant context.',
+    technologies: ['Python', 'LangGraph', 'LangChain', 'Qdrant', 'Groq LLM', 'FastAPI'],
+    githubUrl: 'https://github.com/aetzaz63',
   },
+  {
+    title: 'AI-Powered RAG Document Assistant',
+    year: '2026',
+    category: 'AI/ML',
+    description:
+      'Full-stack intelligent document assistant using FastAPI and LangChain that lets users upload PDF, DOCX, CSV, and TXT files and receive AI-generated answers with citations. Powered by Qdrant vector search, HuggingFace embeddings, and real-time Groq LLM streaming.',
+    technologies: ['Python', 'FastAPI', 'LangChain', 'Qdrant', 'HuggingFace', 'Groq LLM'],
+    githubUrl: 'https://github.com/aetzaz63',
+  },
+  {
+    title: 'Stock Sentiment Analysis using NLP & Machine Learning',
+    year: '2025',
+    category: 'AI/ML',
+    description:
+      'End-to-end NLP pipeline that analyzes financial news headlines and predicts stock market movement using TF-IDF, Logistic Regression, BERT embeddings, and XGBoost. Includes comparative evaluation of traditional ML vs transformer-based approaches.',
+    technologies: ['Python', 'BERT', 'XGBoost', 'Scikit-learn', 'HuggingFace', 'Pandas'],
+    githubUrl: 'https://github.com/aetzaz63',
+  },
+
+  // ---------- n8n Automation ----------
   {
     title: 'Shopify Customer Support Automation',
     year: '2025',
@@ -67,6 +72,48 @@ const allProjects: Project[] = [
     image: '/travel.png',
     githubUrl: 'https://github.com/aetzaz63/AI-Powered-Travel-Automation-Tool',
   },
+
+  // ---------- DevOps ----------
+  {
+    title: 'End-to-End Data Engineering Pipeline',
+    year: '2025',
+    category: 'DevOps',
+    description:
+      'Built a complete ML + Data Engineering pipeline integrating DVC, Apache Airflow, MLflow, Docker, and Kubernetes. Implemented versioning, workflow automation, and CI/CD for machine learning experiments.',
+    technologies: ['DVC', 'Apache Airflow', 'MLflow', 'Docker', 'Kubernetes', 'Python'],
+    githubUrl: 'https://github.com/razzikhawaja/MLOPS_Project',
+  },
+
+  // ---------- Web Development ----------
+  {
+    title: 'BlogSphere - Full-Stack Blogging Platform',
+    year: '2025',
+    category: 'Web Development',
+    description:
+      'A comprehensive full-stack blogging platform built with Next.js featuring user authentication, admin dashboard, blog management, social features, and real-time notifications.',
+    technologies: ['Next.js', 'React', 'Tailwind CSS', 'Context API', 'React Hook Form', 'Yup'],
+    githubUrl: 'https://github.com/aetzaz63/Blog-sphere',
+    caseStudy: {
+      overview:
+        'BlogSphere is a modern, feature-rich blogging platform that enables users to create, manage, and share blog posts with an engaged community. The platform includes comprehensive user management, social networking features, and a powerful admin dashboard.',
+      challenge:
+        'The main challenges were implementing a scalable architecture that handles complex user interactions, creating an intuitive admin panel for content moderation, building a robust notification system, and ensuring data persistence without a backend database.',
+      solution:
+        'Implemented a client-side data management system using LocalStorage and Context API, created reusable components for blog cards and forms, developed a comprehensive admin dashboard with user and blog management capabilities, and built a real-time notification system with follow/unfollow functionality.',
+      features: [
+        'User Authentication System: Complete registration, login, and profile management with form validation using React Hook Form and Yup',
+        'Blog Management: Create, edit, delete blogs with rich text content, image uploads, categories, and search/filter functionality',
+        'Admin Dashboard: Comprehensive user and blog management with enable/disable capabilities, statistics dashboard, and search filters',
+        'Social Features: Follow/unfollow system, user profiles, personalized feed showing posts from followed users',
+        'Notifications System: Real-time notifications for new followers, comments, and interactions with read/unread status',
+        'Rating & Comments: Interactive rating system with average calculations and nested comment threads with edit/delete options',
+        'Responsive Design: Mobile-first approach using Tailwind CSS with dark mode support',
+        'Data Persistence: Client-side state management with LocalStorage for seamless user experience',
+      ],
+      impact:
+        'Successfully created a fully functional blogging platform that demonstrates advanced Next.js capabilities, complex state management, and modern UI/UX patterns. The project showcases skills in full-stack development, user authentication flows, admin panel design, and social networking features implementation.',
+    },
+  },
   {
     title: 'ShopNow E-Commerce Platform',
     year: '2024',
@@ -76,15 +123,6 @@ const allProjects: Project[] = [
     technologies: ['Next.js', 'React', 'Tailwind CSS', 'Context API'],
     image: '/shop.png',
     githubUrl: 'https://github.com/aetzaz63/ShopNow-NextjsProject',
-  },
-  {
-    title: 'End-to-End Data Engineering Pipeline',
-    year: '2025',
-    category: 'DevOps',
-    description:
-      'Built a complete ML + Data Engineering pipeline integrating DVC, Apache Airflow, MLflow, Docker, and Kubernetes. Implemented versioning, workflow automation, and CI/CD for machine learning experiments.',
-    technologies: ['DVC', 'Apache Airflow', 'MLflow', 'Docker', 'Kubernetes', 'Python'],
-    githubUrl: 'https://github.com/razzikhawaja/MLOPS_Project',
   },
   {
     title: 'BloodBond - Blood Donation App',
@@ -106,16 +144,14 @@ const allProjects: Project[] = [
   },
 ];
 
-const tabs = ['All Projects', 'n8n Automation', 'Web Development', 'DevOps'];
+const tabs = ['All Projects', 'AI/ML', 'n8n Automation', 'DevOps', 'Web Development'];
 
 export function Projects() {
   const [activeTab, setActiveTab] = useState('All Projects');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const getDisplayProjects = (): Project[] => {
-    if (activeTab === 'All Projects') {
-      return allProjects;
-    }
+    if (activeTab === 'All Projects') return allProjects;
     return allProjects.filter((p) => p.category === activeTab);
   };
 
@@ -123,12 +159,10 @@ export function Projects() {
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Projects
-          </h2>
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Projects</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           <p className="text-slate-600 dark:text-slate-400 mt-6 max-w-3xl mx-auto text-lg">
-            A showcase of my work across web development, n8n automation, and software engineering.
+            A showcase of my work across AI/ML, automation, DevOps, and web development.
           </p>
         </div>
 
@@ -170,7 +204,7 @@ export function Projects() {
                   <h3 className="text-lg font-semibold leading-none tracking-tight text-slate-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-blue-600/30 text-blue-700 dark:text-blue-300 shrink-0">
+                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-blue-600/30 text-blue-700 dark:text-blue-300 shrink-0 ml-2">
                     {project.year}
                   </span>
                 </div>
@@ -271,21 +305,18 @@ export function Projects() {
                   {selectedProject.caseStudy.overview}
                 </p>
               </div>
-
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Challenge</h4>
                 <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.challenge}
                 </p>
               </div>
-
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Solution</h4>
                 <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.solution}
                 </p>
               </div>
-
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Key Features Implemented</h4>
                 <ul className="space-y-2">
@@ -297,14 +328,12 @@ export function Projects() {
                   ))}
                 </ul>
               </div>
-
               <div>
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Impact & Results</h4>
                 <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                   {selectedProject.caseStudy.impact}
                 </p>
               </div>
-
               <div className="border-t border-slate-200 dark:border-slate-800 pt-6">
                 <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Technologies Used</h4>
                 <div className="flex flex-wrap gap-2">
