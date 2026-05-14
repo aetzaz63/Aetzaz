@@ -8,7 +8,7 @@ export function Hero() {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-mern-stack-ai-automation-n8n/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ai-ml-nlp-rag-agentic-rag/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
   ];
 
@@ -60,7 +60,7 @@ export function Hero() {
               Software Engineer <br />& AI Specialist
             </h1>
             <p className="text-base sm:text-lg text-slate-700 dark:text-slate-400 mb-6 max-w-2xl">
-              Building scalable web applications and intelligent automation solutions
+               Building AI-powered systems and intelligent automation solutions
             </p>
 
             <Link

@@ -7,7 +7,7 @@ export function Footer() {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/aetzaz.736/', label: 'Instagram' },
     { icon: Github, href: 'https://github.com/aetzaz63', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ashraf-59713926b/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-aetzaz-ai-ml-nlp-rag-agentic-rag/', label: 'LinkedIn' },
     { icon: Facebook, href: 'https://www.facebook.com/muhammad.aetzaz.545', label: 'Facebook' },
     { icon: Mail, href: 'mailto:aetzaz36@gmail.com', label: 'Email' },
   ];
